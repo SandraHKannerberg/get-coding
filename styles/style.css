@@ -66,17 +66,19 @@ body {
   background-color: var(--light-color);
   border: 0.06rem solid var(--primary-color);
   box-shadow: var(--light-shadow);
-  min-width: 86.5rem;
+  min-width: 86, 5rem;
   min-height: 5.3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 4.3rem;
+  left: 2rem;
+  right: 2rem;
 }
 
 #header-menu > ul {
-  min-width: 43.25rem;
+  min-width: 34.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +99,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 2.68rem;
 }
 
 main > h1 {
@@ -124,14 +126,13 @@ footer {
   justify-content: end;
   align-items: center;
   min-height: 10.25rem;
-  margin-left: 54rem;
 }
 
 #footer-menu > ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 33rem;
+  min-width: 30.18rem;
   min-height: 7.5rem;
   margin-right: 6rem;
 }
