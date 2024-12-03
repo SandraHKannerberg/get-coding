@@ -40,8 +40,8 @@ ul[role="list"] {
   --font-family: "Roboto", sans-serif;
   --font-style: normal;
   --font-weight: 400;
-  --dark-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  --light-shadow: 1px 1px 21px #dcdcdc;
+  --dark-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  --light-shadow: 0.06rem 0.06rem 1.3rem #dcdcdc;
 }
 
 body {
@@ -66,7 +66,6 @@ body {
   background-color: var(--light-color);
   border: 0.06rem solid var(--primary-color);
   box-shadow: var(--light-shadow);
-  min-width: 86, 5rem;
   min-height: 5.3rem;
   display: flex;
   justify-content: center;
@@ -82,14 +81,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
 .header-menu-link {
   color: var(--text-color-dark);
   text-decoration: none;
   font-size: 1.5rem;
-  /* line-height: 28px; */
+  line-height: 1.16;
 }
 
 main {
@@ -99,23 +97,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.68rem;
+  gap: 2.7rem;
 }
 
 main > h1 {
   font-size: 2.25rem;
   font-weight: 400;
-  /* line-height: 42px; */
+  text-align: center;
+  line-height: 1.16;
 }
 
 .more-info-btn {
   background-color: var(--dark-color);
-  border: 1px solid var(--dark-color);
-  border-radius: 10px;
+  border: 0.06rem solid var(--dark-color);
+  border-radius: 0.625rem;
   box-shadow: var(--dark-shadow);
   color: var(--text-color);
   font-size: 1.8rem;
-  /* line-height: 35px; */
   min-width: 13.5rem;
   min-height: 4.1rem;
 }
@@ -140,6 +138,6 @@ footer {
 .footer-menu-link {
   color: var(--text-color-dark);
   text-decoration: none;
-  font-size: 1.875rem;
-  /* line-height: 35px; */
+  font-size: 1.88rem;
+  line-height: 1.16;
 }
