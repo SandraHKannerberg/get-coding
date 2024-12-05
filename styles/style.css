@@ -78,7 +78,7 @@ body {
   top: 4.3rem;
 }
 
-#small-device-menu {
+.dropdown button {
   display: none;
   position: absolute;
   min-height: 3rem;
@@ -88,6 +88,50 @@ body {
   background-color: var(--light-color);
   border: 0.06rem solid var(--primary-color);
   box-shadow: var(--light-shadow);
+  cursor: pointer;
+}
+
+.dropdown button:hover {
+  background-color: var(--text-color-dark);
+  color: var(--text-color-light);
+}
+
+.menu-bar-icon:hover {
+  color: var(--text-color-light);
+}
+
+.dropdown-content {
+  background-color: var(--light-color);
+  border: 0.06rem solid var(--primary-color);
+  box-shadow: var(--light-shadow);
+  display: none;
+  position: absolute;
+  min-height: 6rem;
+  right: 2rem;
+  left: 2rem;
+  top: 5rem;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--text-color-dark);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  text-decoration: underline;
+  padding: 0.3rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+  padding-right: 0.5rem;
 }
 
 #large-device-menu > ul {
@@ -120,7 +164,6 @@ main {
 }
 
 main > h1 {
-  /* font-size: 2.25em; */
   font-size: clamp(2rem, 5vw, 2.25rem);
   font-weight: 400;
   text-align: center;
@@ -173,7 +216,7 @@ footer {
     display: none;
   }
 
-  #small-device-menu {
+  .dropdown button {
     display: flex;
     justify-content: center;
     align-items: center;

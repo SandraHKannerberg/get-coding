@@ -23,6 +23,7 @@
         class="image-header"
         aria-label="Background image featuring two newspapers about coding"
       >
+        <!--Menu for large device-->
         <nav id="large-device-menu">
           <ul role="list">
             <li><a href="#" class="header-menu-link">Learn to code</a></li>
@@ -31,13 +32,16 @@
           </ul>
         </nav>
 
-        <nav id="small-device-menu">
-          <i class="fa-solid fa-bars menu-bar-icon"></i>
-          <!-- <ul role="list" class="small-device-ul">
-            <li><a href="#" class="header-menu-link">Learn to code</a></li>
-            <li><a href="#" class="header-menu-link">About</a></li>
-            <li><a href="#" class="header-menu-link">Contact us</a></li>
-          </ul> -->
+        <!--Menu for small device-->
+        <nav class="dropdown">
+          <button>
+            <i class="fa-solid fa-bars menu-bar-icon"></i>
+          </button>
+          <ul role="list" class="dropdown-content">
+            <li><a href="#">Learn to code</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
         </nav>
       </header>
 
